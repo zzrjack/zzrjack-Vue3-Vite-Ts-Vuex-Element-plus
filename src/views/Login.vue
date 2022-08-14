@@ -3,22 +3,12 @@
     <section class="form-container">
       <div class="manage-tip">
         <span class="title">后台管理系统</span>
-        <el-form
-          :rules="rules"
-          ref="ruleFormRef"
-          :model="loginUser"
-          class="loginForm"
-          label-width="80px"
-        >
+        <el-form :rules="rules" ref="ruleFormRef" :model="loginUser" class="loginForm" label-width="80px">
           <el-form-item label="邮箱" prop="email">
             <el-input v-model="loginUser.email" placeholder="请输入邮箱"></el-input>
           </el-form-item>
           <el-form-item label="密码" prop="password">
-            <el-input
-              v-model="loginUser.password"
-              placeholder="请输入密码"
-              type="password"
-            ></el-input>
+            <el-input v-model="loginUser.password" placeholder="请输入密码" type="password"></el-input>
           </el-form-item>
 
           <el-form-item>
@@ -26,7 +16,8 @@
           </el-form-item>
 
           <div class="tiparea">
-            <p>还没有账号? 现在<router-link to="/register">注册</router-link></p>
+            <p>还没有账号? 现在<router-link to="/register">注册</router-link>
+            </p>
           </div>
         </el-form>
       </div>
@@ -46,8 +37,8 @@ const ruleFormRef = ref<FormInstance>();
 const router = useRouter();
 const store = useAuthStore();
 const loginUser = ref<registerType>({
-  email: "27732357@qq.com",
-  password: "321321",
+  email: "",
+  password: "",
 });
 
 const rules = reactive<registerRulesType>({
@@ -99,4 +90,5 @@ const handleSubmit = (formEl: FormInstance | undefined) => {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>

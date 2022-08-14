@@ -4,7 +4,7 @@
       <el-row>
         <el-col :span="12" class="logo-container">
           <img src="../assets/logo.png" class="logo" alt="logo" />
-          <span class="title">后台管理系统</span>
+          <span class="title">资金后台管理系统</span>
         </el-col>
         <el-col :span="12" class="user">
           <div class="userinfo">
@@ -16,7 +16,9 @@
             <span class="dropdown">
               <el-dropdown trigger="click" @command="handleDropdown">
                 <span class="el-dropdown-link">
-                  <el-icon><ArrowDown /></el-icon>
+                  <el-icon>
+                    <ArrowDown />
+                  </el-icon>
                 </span>
                 <template #dropdown>
                   <el-dropdown-menu>
@@ -78,6 +80,7 @@ const logout = () => {
   line-height: 60px;
   min-width: 400px;
 }
+
 .logo {
   height: 50px;
   width: 50px;
@@ -85,6 +88,7 @@ const logout = () => {
   vertical-align: middle;
   display: inline-block;
 }
+
 .title {
   vertical-align: middle;
   font-size: 22px;
@@ -97,6 +101,7 @@ const logout = () => {
   text-align: right;
   padding-right: 10px;
 }
+
 .avatar {
   width: 40px;
   height: 40px;
@@ -104,28 +109,34 @@ const logout = () => {
   vertical-align: middle;
   display: inline-block;
 }
+
 .welcome-content {
   display: inline-block;
   width: auto;
   vertical-align: middle;
   padding: 0 5px;
 }
+
 .content {
   line-height: 20px;
   text-align: center;
   font-size: 14px;
 }
+
 .welcome {
   font-size: 12px;
 }
+
 .username {
   color: #409eff;
   font-weight: bolder;
 }
+
 .dropdown {
   cursor: pointer;
   margin-right: 5px;
 }
+
 .el-dropdown {
   color: #fff;
 }
