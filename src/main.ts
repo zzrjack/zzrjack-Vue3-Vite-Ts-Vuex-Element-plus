@@ -3,7 +3,6 @@ import App from "./App.vue";
 import router from "./router";
 import { createPinia } from "pinia";
 import { HomeFilled, Money, InfoFilled, ArrowDown, Timer } from "@element-plus/icons-vue";
-
 const app = createApp(App);
 
 const icons = {
