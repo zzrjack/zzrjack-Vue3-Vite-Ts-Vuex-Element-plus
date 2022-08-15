@@ -41,7 +41,7 @@ const loginUser = ref<registerType>({
   password: "",
 });
 
-const rules = reactive<registerRulesType>({
+const rules = reactive<registerRulesType | any>({
   email: [
     {
       type: "email",
