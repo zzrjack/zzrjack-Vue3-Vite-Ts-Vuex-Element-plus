@@ -55,7 +55,7 @@ const validatePass2 = (rule: any, value: any, callback: any) => {
   }
 };
 
-const rules = reactive<registerRulesType>({
+const rules = reactive<registerRulesType | any>({
   name: [
     { required: true, message: "用户名不能为空", trigger: "change" },
     { min: 2, max: 30, message: "长度在2~30字符", trigger: "blur" },
